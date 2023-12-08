@@ -1,0 +1,8 @@
+// The program input for token/src/main.leo
+[mint_public]
+receiver: address = aleo1ptqvxu4gjfge8tuhgq2pqap0u5pms4p97gwhu7dwngxshpfzcszsswzpzd;
+amount: u64 = 100u64;
+
+[initialize_collection]
+total: u128 = 10u128;
+symbol: u128 = 10u128;

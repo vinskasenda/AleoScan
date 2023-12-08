@@ -1,0 +1,91 @@
+.bg-home {
+    background: url('@image/home/background.png');
+    position: fixed;
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -10;
+}
+
+.gradient-border {
+  background: linear-gradient(90deg, rgba(244,182,204,1) 0%, rgba(241,97,201,1) 50%, rgba(145,44,193,1) 100%);
+}
+
+.gradient-border-detail {
+  background: linear-gradient(180deg, rgba(244,182,204,1) 0%, rgba(241,97,201,1) 50%, rgba(145,44,193,1) 100%);
+}
+
+.gradient-button {
+  background: linear-gradient(90deg, #FA5BCD 0%, #E22CDB 44.17%, #922CE2 100%)
+}
+
+.button-wallet {
+  box-shadow: 0px -4px 32px 0px #F82FCC;
+}
+
+.button-search-home {
+  box-shadow: -4px 0px 32px 0px rgba(255, 255, 255, 0.25);
+}
+
+
+@keyframes SearchHomeButton {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1
+  }
+}
+
+#SearchHomeButton {
+  transform: translateX(100%);
+  opacity: 0;
+  display: none;
+  animation: SearchHomeButton 0.3s ease-in-out;
+}
+
+#SearchHome #SearchHomeButton.active{
+  display: flex;
+  transform: translateX(0);
+  opacity: 1
+}
+
+.moving-object--top {
+  animation: flyRight 4s linear infinite;
+}
+
+
+.moving-object--bottom {
+  animation: flyLeft 4s linear infinite;
+}
+
+@keyframes flyRight {
+  0% {
+      left: -500px; 
+  }
+  100% {
+      left: calc(100% + 500px); 
+  }
+}
+
+@keyframes flyLeft {
+  0% {
+      right: -500px; 
+  }
+  100% {
+      right: calc(100% + 500px); 
+  }
+}
+
+.moving-line--top {
+  background: linear-gradient(90deg, rgba(145,44,193,0.1) 0%, rgba(241,97,201,1) 100%)
+}
+
+.moving-line--bottom {
+  background: linear-gradient(90deg, rgba(241,97,201,1) 0%, rgba(145,44,193,0.1) 100%)
+}

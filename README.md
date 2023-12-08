@@ -7,7 +7,7 @@ An NFT explorer providing users with searching through all NFTs and collections 
 Clone the project
 
 ```bash
-  git clone [https://github.com/devkupro/AleoNftExplorer.git](https://github.com/vinskasenda/AleoScan.git)
+  git clone https://github.com/vinskasenda/AleoScan.git
 ```
 
 Go to the project directory
